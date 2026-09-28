@@ -1,6 +1,6 @@
 # Code Review Portfolio
 
-Hi, I'm js-muc. I'm a full-stack developer with an interest in agentic AI systems, currently building a public track record as an open source contributor and code reviewer.
+Hi, I'm Jesee Muchoki. I'm a full-stack developer with an interest in agentic AI systems, currently building a public track record as an open source contributor and code reviewer.
 
 ## Purpose of this repository
 
