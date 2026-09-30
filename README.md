@@ -19,7 +19,7 @@ I am working toward a role evaluating LLM-generated code patches for open source
 
 | Date | Repository | Type | PR | Status |
 |------|-----------|------|----|--------|
-| 2026-09-29 | [peterzty/markdown-reader](https://github.com/peterzty/markdown-reader) | Documentation | [#294](https://github.com/peterzty/markdown-reader/pull/294) | Open |
+| 2026-09-29 | [petertzy/markdown-reader](https://github.com/peterzty/markdown-reader) | Documentation | [#294](https://github.com/peterzty/markdown-reader/pull/294) | merged |
 
 ## Review practice
 
