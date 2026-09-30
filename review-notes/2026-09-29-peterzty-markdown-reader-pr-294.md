@@ -7,7 +7,7 @@
 
 ## What does this PR claim to do?
 
-<!-- Write 1-2 sentences here -->
+This PR corrected a document inconsistency. The README stated that the project requires Node.js 18+, but `CONTRIBUTING.md` and `frontend/package.json` both specified Node.js 20.9.0+. A new contributor following the `README.MD` would install Node.js 18.x and encounter an environmental mismatch during setup, with no clear indication of the cause. This PR aligned the README with the project's actual requirement.
 
 ## Does the change actually accomplish that?
 
