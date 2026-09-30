@@ -11,7 +11,7 @@ This PR corrected a document inconsistency. The README stated that the project r
 
 ## Does the change actually accomplish that?
 
-<!-- Write your assessment here -->
+Yes — the change accomplishes the stated intent. The diff shows exactly one line changed in `README.MD`: `Node.js 18+` was replaced with `Node.js 20.9.0+`. No other files were modified. This aligns the README with the requirement declared in `frontend/package.json` (`engines.node: ">=20.9.0"`) and already documented in `CONTRIBUTING.md`.
 
 ## Edge cases, risks, or concerns
 
