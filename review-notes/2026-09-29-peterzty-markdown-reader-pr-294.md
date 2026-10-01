@@ -25,4 +25,4 @@ One open question: whether the previous value (`18+`) was correct at an earlier 
 
 ## What I learned
 
-<!-- 1-2 sentences -->
+Spotting the bug was easy, but communicating the fix professionally was harder than I expected. The maintainer reviewed and merged the PR quickly, and I suspect that is because the PR was well documented: the description explained what changed, why it mattered, and how the change was verified. The takeaway is that a properly documented PR saves the maintainer time and tends to get a faster response.
