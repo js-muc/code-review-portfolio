@@ -15,7 +15,9 @@ Yes — the change accomplishes the stated intent. The diff shows exactly one li
 
 ## Edge cases, risks, or concerns
 
-<!-- List any issues, or state clearly that there are none -->
+None that I can identify. This is a documentation-only change to `README.MD`, so no code, tests, build configuration, or runtime behavior is affected. The new value (`Node.js 20.9.0+`) matches the requirement declared in `frontend/package.json` (`engines.node: ">=20.9.0"`) and the value already stated in `CONTRIBUTING.md`, so the three files are now consistent.
+
+One open question: whether the previous value (`18+`) was correct at an earlier point in the project's history. Checking the git history of `frontend/package.json` and `CONTRIBUTING.md` would confirm whether the requirement changed over time. This does not affect the correctness of this PR — the new value is correct regardless — but it may be useful context for future maintainers.
 
 ## My judgment as a maintainer
 
