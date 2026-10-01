@@ -1,4 +1,4 @@
-# PR Review: peterzty/markdown-reader #294 — docs: update Node.js requirement in README to 20.9.0+
+# PR Review: petertzy/markdown-reader #294 — docs: update Node.js requirement in README to 20.9.0+
 
 **Author:** js-muc
 **Opened:** 2026-09-29
