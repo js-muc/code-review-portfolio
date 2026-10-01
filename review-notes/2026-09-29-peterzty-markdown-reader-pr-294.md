@@ -21,7 +21,7 @@ One open question: whether the previous value (`18+`) was correct at an earlier 
 
 ## My judgment as a maintainer
 
-<!-- Approve / Request changes / Comment, then explain why -->
+**Verdict: Approve.** This is a documentation-only change with no effect on code behavior, build, or runtime. It aligns `README.MD` with the Node.js requirement already declared in `frontend/package.json` and stated in `CONTRIBUTING.md`. The change is minimal, verified against two independent sources, and introduces no risk. I would merge it as-is.
 
 ## What I learned
 
