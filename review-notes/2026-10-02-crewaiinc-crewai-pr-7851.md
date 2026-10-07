@@ -15,7 +15,11 @@ Yes — the diff matches the stated intent. In `lib/crewai-files/pyproject.toml`
 
 ## Edge cases, risks, or concerns
 
-<!-- What could go wrong? -->
+- **Behavior change in `pypdf` 6.19.0:** A version bump from `6.16.1` to `6.19.0` is more than a patch update. If the new version changed any public API that CrewAI's PDF handling relies on, that could surface as a runtime error. The author claims the change is safe because PDF handling uses the standard `PdfReader`/`PdfWriter` APIs, and 18 PDF tests pass. The claim is plausible but not verified from the diff alone.
+
+- **Downstream consumers with pinned old versions:** Any project that depends on CrewAI and pins `pypdf` at `6.16.1` in its own lockfile will now face a dependency resolution conflict against this PR's `>=6.19.0` floor. This is not a bug — it is how dependency bumps work — but it is a real consequence for downstream users and may require them to update their own locks.
+
+- **No new test added:** The PR description checks "Tests added or updated for the changed behavior," but what actually happened is that existing tests were run (18 PDF tests passed). No new test confirms the security fix specifically. For a dependency bump, existing coverage is arguably sufficient, but the label is slightly imprecise.
 
 ## My judgment as a maintainer
 
