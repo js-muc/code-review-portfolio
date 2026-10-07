@@ -27,4 +27,4 @@ Yes — the diff matches the stated intent. In `lib/crewai-files/pyproject.toml`
 
 ## What I learned
 
-<!-- 1-2 sentences -->
+This PR was harder to assess than it first appeared. A dependency bump looks mechanical — three files, one version number, done — but evaluating it required understanding how the three files relate, and reasoning about how a floor change affects downstream runtime behavior. Some of the author's claims — that no APIs changed, that the fix closes all eight advisories — cannot be verified from the diff alone; they rest on the author's evidence, which I could not independently reproduce. The lesson is that even a change with no application code modifications can carry real risks, and a reviewer has to distinguish between what the diff proves and what the author asserts.
