@@ -21,7 +21,7 @@ I am working toward a role evaluating LLM-generated code patches for open source
 |------|-----------|------|----|--------|
 | 2026-09-29 | [petertzy/markdown-reader](https://github.com/petertzy/markdown-reader) | Documentation | [#294](https://github.com/petertzy/markdown-reader/pull/294) | Merged |
 | 2026-10-01 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | Documentation | [#7839](https://github.com/crewAIInc/crewAI/issues/7839) | Open |
-| 2026-10-07 | [petertzy/markdown-reader](https://github.com/petertzy/markdown-reader) | Documentation | [#385](https://github.com/petertzy/markdown-reader/pull/385) | Open |
+| 2026-10-07 | [petertzy/markdown-reader](https://github.com/petertzy/markdown-reader) | Documentation | [#385](https://github.com/petertzy/markdown-reader/pull/385) | Merged |
 
 ## Review practice
 
