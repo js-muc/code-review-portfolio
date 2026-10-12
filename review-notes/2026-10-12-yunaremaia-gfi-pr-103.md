@@ -15,7 +15,11 @@ Yes — the fix is correctly scoped and matches the stated intent. In `src/gfi/c
 
 ## Edge cases, risks, or concerns
 
-<!-- Bullet list -->
+- **Test coverage gap for `trending`:** The PR description states that four commands are affected — `search`, `repo`, `trending`, and `feed`. The regression test covers three: `search`, `repo`, and `feed`. Since `trending` uses the same `_truncate` helper, its behavior is almost certainly fixed, but the test does not directly prove it. Small gap, not a blocker.
+
+- **Return type change from `str` to `Text`:** `_truncate` previously returned a plain `str` and now returns a `rich.text.Text` object. Any caller that does string operations on the result — `len()`, string concatenation, `.startswith()` — could behave differently. In this codebase, all four call sites pass the result directly to `table.add_row`, which accepts both types, so the change is safe here.
+
+- **Other user-controlled strings in the same tables:** The fix wraps `issue.title`, `issue.repo`, and `issue.labels` in `Text`. Other user-controlled strings appear in the same tables — `issue.language`, `issue.url`, and the formatted `created_at` date. In practice, these are unlikely to contain `[` or `]` characters, so the risk is low. Worth noting as a theoretical gap, not a defect in this PR.
 
 ## My judgment as a maintainer
 
