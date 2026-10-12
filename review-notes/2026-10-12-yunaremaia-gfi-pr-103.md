@@ -23,7 +23,7 @@ Yes — the fix is correctly scoped and matches the stated intent. In `src/gfi/c
 
 ## My judgment as a maintainer
 
-<!-- Verdict, then reasoning -->
+**Verdict: Approve.** The fix is clean, correctly scoped, and addresses the root cause rather than the symptom. The change is limited to `src/gfi/cli.py`, where the shared `_truncate` helper now returns a `rich.text.Text` object, and to `tests/test_cli.py`, which adds a regression test. Every place in the CLI that renders `issue.title`, `issue.repo`, or `issue.labels` to a Rich table — one site each in `search`, `repo`, `trending`, and `feed` — goes through `_truncate`, so the fix covers all four commands. The regression test exercises three of the four (`search`, `repo`, `feed`); the fourth (`trending`) shares the same helper and is therefore almost certainly fixed. The remaining concerns — test coverage gap, the `Text` return type — are minor and do not block. I would merge as-is.
 
 ## What I learned
 
