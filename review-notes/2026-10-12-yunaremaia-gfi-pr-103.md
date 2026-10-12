@@ -27,4 +27,4 @@ Yes — the fix is correctly scoped and matches the stated intent. In `src/gfi/c
 
 ## What I learned
 
-<!-- 1-2 sentences -->
+This review was different from the previous two because it required evaluating logic rather than verifying a fact. The key lesson was that the diff alone does not tell the whole story — I had to check every call site of the shared `_truncate` helper to confirm that a fix at that level covers all four commands. I also learned how to spot and articulate a test-coverage gap: the fix covers `trending`, but the regression test does not exercise it. In future reviews I will read the tests as carefully as the code, and check whether the fix is at the right level of abstraction before accepting it.
