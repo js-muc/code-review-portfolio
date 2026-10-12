@@ -11,7 +11,7 @@ This PR is a bug fix in the `gfi` CLI. When an issue title contains bracket char
 
 ## Does the change actually accomplish that?
 
-<!-- 3-5 sentences -->
+Yes — the fix is correctly scoped and matches the stated intent. In `src/gfi/cli.py`, every place that renders `issue.title`, `issue.repo`, or `issue.labels` to a Rich table goes through the `_truncate` helper. There are exactly four such places — one in each of the `search`, `repo`, `trending`, and `feed` commands — and all four now receive a `rich.text.Text` object from the updated helper. The `--json-output` and `--csv` paths continue to use raw strings, which is correct: JSON and CSV do not interpret bracket characters as markup, so the fix is not needed there. The change is complete for the Rich rendering path, and no rendering site was missed.
 
 ## Edge cases, risks, or concerns
 
