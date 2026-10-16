@@ -7,7 +7,7 @@
 
 ## What does this PR claim to do?
 
-<!-- 2-3 sentences in your own words -->
+The problem is that `gh gfi --version` prints help text instead of the version. The `gh` extension entry point used to fold `--version` into the same code branch that handles `--help`, so the flag never reached the CLI. This PR removes `--version` from the help check and passes any unrecognized arguments through to the CLI, which then handles the flag correctly and prints `gh gfi, version 0.1.0`.
 
 ## Does the change actually accomplish that?
 
