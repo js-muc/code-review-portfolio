@@ -23,6 +23,7 @@ I am working toward a role evaluating LLM-generated code patches for open source
 | 2026-10-01 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | Issue (documentation bug) | [#7839](https://github.com/crewAIInc/crewAI/issues/7839) | Open — fix in PR #7841 |
 | 2026-10-07 | [petertzy/markdown-reader](https://github.com/petertzy/markdown-reader) | Documentation (PR) | [#385](https://github.com/petertzy/markdown-reader/pull/385) | Merged |
 | 2026-10-09 | [yunaremaia/gfi](https://github.com/yunaremaia/gfi) | Bug fix (Python) | [#101](https://github.com/yunaremaia/gfi/pull/101) | Merged |
+| 2026-10-14 | [yunaremaia/gfi](https://github.com/yunaremaia/gfi) | Bug fix (Python) | [#107](https://github.com/yunaremaia/gfi/pull/107) | Open |
 
 ## Review practice
 
