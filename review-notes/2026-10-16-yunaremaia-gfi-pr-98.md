@@ -11,7 +11,7 @@ The problem is that `gh gfi --version` prints help text instead of the version. 
 
 ## Does the change actually accomplish that?
 
-<!-- 3-5 sentences -->
+Yes — the change accomplishes the stated intent. The diff touches two files: `src/gfi/gh_extension.py` and `tests/test_gh_extension.py`. In `src/gfi/gh_extension.py`, the change removes `--version` from the tuple of flags that trigger the help branch and adds an `else` branch that forwards any other arguments to the CLI. The help behavior for `--help`, `-h`, and empty invocation is unchanged. The fix applies to both the `gh gfi` entry point and the root `gh-gfi` script, because both call the same `main()` function. The new test in `tests/test_gh_extension.py` runs the root script directly, so the fix is verified end-to-end. No other behavior is affected.
 
 ## Edge cases, risks, or concerns
 
