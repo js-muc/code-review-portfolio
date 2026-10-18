@@ -17,9 +17,13 @@ Yes — the change accomplishes the stated intent. The diff touches two files: `
 
 <!-- Bullet list -->
 
-## My judgment as a maintainer
+## Edge cases, risks, or concerns
 
-<!-- Verdict, then reasoning -->
+- **Unknown flags are now passed to the CLI:** Before the fix, any argument that was not `--help` or `-h` was folded into the help branch. Now the `else` branch forwards unknown flags to the CLI. This is a behavior change, but it is acceptable because the CLI has its own error handling for invalid flags.
+
+- **No end-to-end test for `gh gfi --version`:** The new test runs `gh-gfi --version` directly. The existing test mocks `gh gfi`. There is no test that runs the actual `gh gfi --version` command and checks the output end-to-end. Acceptable: both entry points call the same `main()` function, so the shared logic is covered.
+
+- **The `else` branch handles every non-help argument, but only `--version` is tested:** Flags like `search`, `repo`, or future additions all go through the same branch. Only `--version` is explicitly tested. Acceptable for this PR, since the branch itself is small and clear.
 
 ## What I learned
 
