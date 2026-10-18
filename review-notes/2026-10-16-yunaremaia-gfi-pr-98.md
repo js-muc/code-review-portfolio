@@ -15,10 +15,6 @@ Yes — the change accomplishes the stated intent. The diff touches two files: `
 
 ## Edge cases, risks, or concerns
 
-<!-- Bullet list -->
-
-## Edge cases, risks, or concerns
-
 - **Unknown flags are now passed to the CLI:** Before the fix, any argument that was not `--help` or `-h` was folded into the help branch. Now the `else` branch forwards unknown flags to the CLI. This is a behavior change, but it is acceptable because the CLI has its own error handling for invalid flags.
 
 - **No end-to-end test for `gh gfi --version`:** The new test runs `gh-gfi --version` end-to-end. The existing test for `gh gfi` uses a mock CLI — it patches `gfi.gh_extension.cli` and checks the arguments that would be passed to it, without running the real CLI. Acceptable: both entry points call the same `main()` function, so the shared logic is covered by the mock test.
