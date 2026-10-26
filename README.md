@@ -22,10 +22,9 @@ I am working toward a role evaluating LLM-generated code patches for open source
 | 2026-09-29 | petertzy/markdown-reader | Documentation | [PR #294](https://github.com/petertzy/markdown-reader/pull/294) | Merged |
 | 2026-10-01 | crewAIInc/crewAI | Issue | [Issue #7839](https://github.com/crewAIInc/crewAI/issues/7839) | Open — fix in PR #7841 |
 | 2026-10-07 | petertzy/markdown-reader | Documentation | [PR #385](https://github.com/petertzy/markdown-reader/pull/385) | Merged |
-| 2026-10-09 | yunaremaia/gfi (Repo deleted) | Python Bug Fix | [Commit History](https://github.com/js-muc/gfi/commits/main) | Merged (PR #101). Fixed `gfi open` exiting 0 when browser failed. |
-| 2026-10-14 | yunaremaia/gfi (Repo deleted) | Issue & Fix | [Commit History](https://github.com/js-muc/gfi/commits/main) | Closed. Reported UTF-8 crash on Windows; maintainer added my suggested defensive `None` check. |
+| 2026-10-09 | js-muc/gfi (fork) | Python Bug Fix | *Repo deleted upstream* | **Merged PR #101.** Fixed `gfi open` exiting 0 when browser failed. |
+| 2026-10-14 | js-muc/gfi (fork) | UTF-8 Bug Fix | [Branch Link](https://github.com/js-muc/gfi/tree/fix/utf8-encoding-for-gh-subprocess) | **Closed PR #107.** Fixed Windows UTF-8 crash; test branch preserved in fork. |
 | 2026-10-21 | encode/httpx | Documentation | [Discussion #3805](https://github.com/encode/httpx/discussions/3805) | Open — fix submitted, awaiting maintainer |
-
 ## Review practice
 
 I keep notes on pull requests I read, even when I do not comment. These notes live in the [`review-notes/`](./review-notes/) folder.
