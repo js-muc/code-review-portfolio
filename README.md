@@ -22,11 +22,10 @@ I am working toward a role evaluating LLM-generated code patches for open source
 | 2026-09-29 | petertzy/markdown-reader | Documentation (PR) | [PR #294](https://github.com/petertzy/markdown-reader/pull/294) | Merged |
 | 2026-10-01 | crewAIInc/crewAI | Issue (documentation bug) | [Issue #7839](https://github.com/crewAIInc/crewAI/issues/7839) | Open — fix in PR #7841 |
 | 2026-10-07 | petertzy/markdown-reader | Documentation (PR) | [PR #385](https://github.com/petertzy/markdown-reader/pull/385) | Merged |
-| 2026-10-09 | yunaremaia/gfi | Bug fix (Python) | [PR #101](https://github.com/yunaremaia/gfi/pull/101) | Merged |
-| 2026-10-14 | yunaremaia/gfi | Issue (bug report) | [Issue #106](https://github.com/yunaremaia/gfi/issues/106) | Closed (fix shipped; defensive check from my suggestion included) |
-| 2026-10-14 | yunaremaia/gfi | Bug fix (Python) | [PR #107](https://github.com/yunaremaia/gfi/pull/107) | Closed (duplicate — fix landed in v0.1.2) |
+| 2026-10-09 | js-muc/gfi (fork of deleted repo) | Bug fix (Python) | [Commit history](https://github.com/js-muc/gfi/commits/main) | Merged (upstream repo deleted) |
+| 2026-10-14 | js-muc/gfi (fork of deleted repo) | Issue (bug report) | [Issue #106](https://github.com/js-muc/gfi/issues/106) | Closed (fix shipped; defensive check from my suggestion included) |
+| 2026-10-14 | js-muc/gfi (fork of deleted repo) | Bug fix (Python) | [Commit history](https://github.com/js-muc/gfi/commits/main) | Closed (duplicate — fix landed in v0.1.2) |
 | 2026-10-21 | encode/httpx | Issue (documentation) | [Discussion #3805](https://github.com/encode/httpx/discussions/3805) | Open — awaiting maintainer |
-
 ## Review practice
 
 I keep notes on pull requests I read, even when I do not comment. These notes live in the [`review-notes/`](./review-notes/) folder.
